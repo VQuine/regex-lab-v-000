@@ -4,7 +4,7 @@ end
 
 def words_starting_with_un_and_ending_with_ing(text)
   #/^un\w*ing$/.grep(text)
-  text.count(/^un\w*ing$/)
+  text.grep(/^un\w*ing$/)
 end
 
 def words_five_letters_long(text)
