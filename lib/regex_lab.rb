@@ -2,7 +2,7 @@
 
 # I chose .match because I don't really need an array
 # I just need some sort of return to base the boolean on.
-# A MatchData object seems like it would be faster 
+# A MatchData object seems like it would be faster
 # returning the first match appearing versus
 # returning an array with ALL of the matches.
 def starts_with_a_vowel?(word)
@@ -21,7 +21,7 @@ def words_five_letters_long(text)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-
+  text.match(/^[A-Z].*\.$/) != nil
 end
 
 def valid_phone_number?(phone)
