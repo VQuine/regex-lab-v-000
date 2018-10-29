@@ -27,6 +27,9 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
   text.match(/^[A-Z].*\.$/) != nil
 end
 
+
+# I feel like maybe there's a faster way to achieve this
+# but...
 def valid_phone_number?(phone)
   phone.match(/(\d{10}|\d{3} \d{3} \d{4}|\(\d{3}\)\d{3}\-\d{4}|\(\d{3}\)\d{7})/) != nil
 end
